@@ -1,21 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Profile</title>
+  <title>Md. Nazim Uddin — Technology Leader</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Md. Nazim Uddin — Country Manager & IT Head, technology leadership professional profile">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #14213d;
+      --navy-light: #1f2f52;
+      --accent: #b08d57;
+      --text-muted: #5a6472;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #eef0f3;
+      color: #212529;
+    }
+    .sidebar {
+      background: var(--navy);
+      color: #fff;
+    }
+    .avatar-initials {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--navy-light);
+      border: 3px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 0 auto;
+    }
+    .sidebar h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    .sidebar .role {
+      color: var(--accent);
+      font-size: .95rem;
+      font-weight: 500;
+    }
+    .sidebar-section-title {
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .72rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: .75rem;
+    }
+    .sidebar hr {
+      border-color: rgba(255,255,255,.15);
+    }
+    .contact-item {
+      font-size: .88rem;
+      color: rgba(255,255,255,.85);
+      word-break: break-word;
+    }
+    .contact-item i {
+      color: var(--accent);
+      width: 1.2rem;
+    }
+    .skill-tag {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 500;
+      padding: .3rem .65rem;
+      margin: .2rem .3rem .2rem 0;
+      border-radius: .3rem;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      color: #fff;
+    }
+    .social-icon {
+      color: rgba(255,255,255,.85);
+      font-size: 1.1rem;
+      margin-right: .9rem;
+    }
+    .social-icon:hover {
+      color: var(--accent);
+    }
+    .main-content {
+      background: #fff;
+    }
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--navy);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: .5rem;
+      margin-bottom: 1.1rem;
+      display: inline-block;
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 1.4rem;
+      border-left: 2px solid #e3e6ea;
+      padding-bottom: 1.5rem;
+    }
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .timeline-role {
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: .1rem;
+    }
+    .timeline-meta {
+      font-size: .82rem;
+      color: var(--text-muted);
+      margin-bottom: .5rem;
+    }
+    .timeline-item ul {
+      padding-left: 1.1rem;
+      margin-bottom: 0;
+    }
+    .achievement-card {
+      border: 1px solid #e3e6ea;
+      border-left: 3px solid var(--accent);
+      border-radius: .25rem;
+      padding: 1rem 1.2rem;
+      height: 100%;
+    }
+    .achievement-card h6 {
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .info-table {
+      font-size: .9rem;
+    }
+    .info-table th {
+      color: var(--navy);
+      font-weight: 600;
+      width: 40%;
+      white-space: nowrap;
+    }
+    .info-table td, .info-table th {
+      border-color: #e3e6ea;
+    }
+    @media print {
+      body { background: #fff; }
+      .no-print { display: none !important; }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container mt-3">
-  <h2>Welcome to Nazim's Profile</h2>
-  <div class="card">
-    <div class="card-header">Header</div>
-    <div class="card-body">Content</div> 
-    <div class="card-footer">Footer</div>
+<div class="container-fluid py-4 py-md-5">
+  <div class="row justify-content-center g-0" style="max-width: 1000px; margin: 0 auto;">
+
+    <!-- Sidebar -->
+    <div class="col-md-4 sidebar p-4 p-lg-5 rounded-start-4">
+      <div class="text-center mb-4">
+        <div class="avatar-initials mb-3">NU</div>
+        <h1 class="mb-1">Md. Nazim Uddin</h1>
+        <div class="role">Country Manager &amp; IT Head</div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-4">
+        <a href="mailto:nazim@jrfintel.com" class="social-icon" title="Email"><i class="bi bi-envelope-fill"></i></a>
+        <a href="tel:+8801794565923" class="social-icon" title="Phone"><i class="bi bi-telephone-fill"></i></a>
+        <a href="https://github.com/nazimfeni" class="social-icon" title="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+      </div>
+
+      <hr>
+
+      <div class="mb-4">
+        <div class="sidebar-section-title">Contact</div>
+        <p class="contact-item mb-2"><i class="bi bi-envelope-fill me-2"></i>nazim@jrfintel.com</p>
+        <p class="contact-item mb-2"><i class="bi bi-envelope-fill me-2"></i>mdnazimuddin77@gmail.com</p>
+        <p class="contact-item mb-2"><i class="bi bi-telephone-fill me-2"></i>+88 01794565923</p>
+        <p class="contact-item mb-0"><i class="bi bi-geo-alt-fill me-2"></i>275/3/A Tilpapara (3rd Floor), Khilgaon, Dhaka-1219, Bangladesh</p>
+      </div>
+
+      <hr>
+
+      <div class="mb-4">
+        <div class="sidebar-section-title">Core Competencies</div>
+        <span class="skill-tag">Technology Leadership</span>
+        <span class="skill-tag">Software Development</span>
+        <span class="skill-tag">IT Infrastructure Management</span>
+        <span class="skill-tag">IT Team Leadership</span>
+        <span class="skill-tag">Digital Transformation</span>
+        <span class="skill-tag">Vendor &amp; Strategic Partnerships</span>
+      </div>
+
+      <hr>
+
+      <div class="mb-4">
+        <div class="sidebar-section-title">Technical Skills</div>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Dart</span>
+        <span class="skill-tag">Laravel</span>
+        <span class="skill-tag">Flutter</span>
+        <span class="skill-tag">Vue.js</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">MySQL / MariaDB</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Oracle 9i/10g</span>
+        <span class="skill-tag">WordPress</span>
+        <span class="skill-tag">Trello</span>
+        <span class="skill-tag">Asana</span>
+      </div>
+
+      <hr>
+
+      <div>
+        <div class="sidebar-section-title">Experience</div>
+        <p class="contact-item mb-0">20+ years in technology leadership, software development, and IT infrastructure management.</p>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="col-md-8 main-content p-4 p-lg-5 rounded-end-4 shadow-sm">
+
+      <section class="mb-5">
+        <h2 class="section-title">Career Objective</h2>
+        <p class="text-muted">
+          Seeking a dynamic role as a Chief Technology Officer (CTO) where I can effectively lead a team,
+          leveraging my expertise, skills, and experience to drive innovation, enhance technological
+          capabilities, and foster organizational growth. Technology leader with over 20 years of experience
+          in software development, IT infrastructure management, and IT team leadership, known for a
+          collaborative leadership style that empowers teams to innovate and excel.
+        </p>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Country Manager &amp; IT Head, Bangladesh</div>
+          <div class="timeline-meta">JRF Intelligence Company Ltd., Japan &middot; 2023 &ndash; Present</div>
+          <ul class="text-muted small">
+            <li>Supervising and leading a team of IT professionals, including programmers, system administrators, network engineers, and support staff.</li>
+            <li>Planning, executing, and overseeing IT projects from conception to completion, managing budgets, timelines, and resources.</li>
+            <li>Developing and managing the IT department's budget and identifying cost-saving opportunities.</li>
+            <li>Establishing and enforcing IT security policies and procedures, and monitoring potential security breaches.</li>
+            <li>Arranging training sessions and keeping the team updated on the latest industry trends and technologies.</li>
+            <li>Communicating IT strategies, initiatives, and updates to senior management and stakeholders.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Senior Executive Officer</div>
+          <div class="timeline-meta">Bengal Commercial Bank Limited &middot; October 2022 &ndash; February 2023</div>
+          <ul class="text-muted small">
+            <li>Designed a Fintech solution, the Remittance Management System, integrating with the bank's core software and MTO's portal via APIs.</li>
+            <li>Established integration with international networks for streamlined foreign remittance processing.</li>
+            <li>Led the development of a skilled workforce for the adoption of new technologies.</li>
+            <li>Automated and optimized divisional tasks to enhance efficiency and compliance.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Executive Officer</div>
+          <div class="timeline-meta">NCC Bank Limited &middot; July 2010 &ndash; October 2022</div>
+          <ul class="text-muted small">
+            <li>Spearheaded development of in-house software solutions to streamline operations and ensure regulatory compliance.</li>
+            <li>Implemented Remittance Management Software (RMS) and developed NCCBX software for the UK Exchange House.</li>
+            <li>Managed integration with international networks for routing foreign remittances through the bank's payment network.</li>
+            <li>Automated Sub Agent fund management, reconciliation, and settlement processes.</li>
+            <li>Oversaw and ensured compliance with internal and external IS audits.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">IT Officer</div>
+          <div class="timeline-meta">NCC Bank Ltd &middot; Foreign Remittance Payment Project (FRPP), funded by DFID, UK &middot; November 2008 &ndash; June 2010</div>
+          <ul class="text-muted small">
+            <li>Developed Accounting &amp; Customer Management System Software for FRPP.</li>
+            <li>Implemented card-based remittance payment through Q-Cash.</li>
+            <li>Supervised payment processes for foreign remittances within the NCC Bank network.</li>
+            <li>Administered MIS reporting and ensured the security of information assets.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Assistant Programmer (Lecturer)</div>
+          <div class="timeline-meta">City Commerce College, Chittagong &middot; February 2004 &ndash; November 2008</div>
+          <p class="text-muted small mb-0">Taught Computer Studies.</p>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title">Key Achievements</h2>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>FRPP Project Delivery</h6>
+              <p class="text-muted small mb-0">
+                Spearheaded the development and deployment of the FRPP Project, financed by DFID (UK) and
+                led by NCC Bank &amp; TMSS, significantly contributing to business growth and competitiveness.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>NCCB Exchange (UK) Software</h6>
+              <p class="text-muted small mb-0">
+                Developed Remittance Management Software for NCCB Exchange (UK) Limited, endorsed by
+                Barclays Bank Ltd, UK.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>Reconciliation Automation</h6>
+              <p class="text-muted small mb-0">
+                Successfully implemented the Remittance Management System and automated the
+                reconciliation and settlement module.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>Strategic Vendor Partnerships</h6>
+              <p class="text-muted small mb-0">
+                Established strategic partnerships with technology vendors and fostered a culture of
+                continuous learning and development within the technology team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-item">
+          <div class="timeline-role">MBA (Finance &amp; Banking)</div>
+          <div class="timeline-meta">Institute of Business Administration (IBA), Jahangirnagar University &middot; CGPA 3.63 &middot; 2015</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-role">MS in CS &amp; IT</div>
+          <div class="timeline-meta">Southern University Bangladesh &middot; CGPA 3.88 &middot; 2008</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-role">B.Sc. in Computer Science &amp; Engineering</div>
+          <div class="timeline-meta">International Islamic University Chittagong &middot; CGPA 3.58 &middot; 2003</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-role">HSC, Science Group</div>
+          <div class="timeline-meta">Dhaka Board &middot; 2nd Division &middot; 1996</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-role">SSC, Science Group</div>
+          <div class="timeline-meta">Comilla Board &middot; 1st Division &middot; 1994</div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title">Certifications &amp; Training</h2>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>Microsoft Certified Professional (MCP)</h6>
+              <p class="text-muted small mb-0">Microsoft Corp., USA &middot; MCP ID #2977605</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>Certified Expert in E-Banking</h6>
+              <p class="text-muted small mb-0">Bangladesh Institute of Bank Management (BIBM), Mirpur, Dhaka</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>Banking Diploma (JAIBB &amp; DAIBB)</h6>
+              <p class="text-muted small mb-0">Institute of Bankers, Bangladesh (IBB)</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>Oracle Certified Professional (OCP)</h6>
+              <p class="text-muted small mb-0">IBCS PRIMAX Software Ltd.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>Online Banking for Non-IT Executives</h6>
+              <p class="text-muted small mb-0">Bangladesh Institute of Bank Management (BIBM), Mirpur, Dhaka</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="achievement-card">
+              <h6>Research Workshop</h6>
+              <p class="text-muted small mb-0">"Augmenting Remittances through Banking Channel: Bangladesh Context" &middot; BIBM</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title">Membership &amp; Activities</h2>
+        <p class="text-muted mb-2">
+          <strong>Associate Membership</strong>, Bangladesh Computer Society &middot; Membership Number AM 06181
+        </p>
+        <p class="text-muted mb-0">
+          Presented a research paper titled <em>"Echelon &ndash; The International Spy Network: How our
+          freedom and privacy are compromised by secret projects like this."</em>
+        </p>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="section-title">Personal Information</h2>
+        <table class="table info-table mb-0">
+          <tbody>
+            <tr><th>Father's Name</th><td>Sultan Ahammed</td></tr>
+            <tr><th>Mother's Name</th><td>Sultana Ambia</td></tr>
+            <tr><th>Permanent Address</th><td>833, Mokhsedur Rahman Sarak, Feni-3900, Feni, Bangladesh</td></tr>
+            <tr><th>Contact Address</th><td>275/3/A Tilpapara (3rd Floor), Khilgaon, Dhaka-1219</td></tr>
+            <tr><th>Date of Birth</th><td>November 5, 1977</td></tr>
+            <tr><th>Religion</th><td>Islam</td></tr>
+            <tr><th>Nationality</th><td>Bangladeshi</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2 class="section-title">Contact</h2>
+        <p class="text-muted mb-2">
+          <i class="bi bi-envelope-fill me-2"></i>
+          <a href="mailto:nazim@jrfintel.com" class="text-decoration-none">nazim@jrfintel.com</a>
+        </p>
+        <p class="text-muted mb-2">
+          <i class="bi bi-envelope-fill me-2"></i>
+          <a href="mailto:mdnazimuddin77@gmail.com" class="text-decoration-none">mdnazimuddin77@gmail.com</a>
+        </p>
+        <p class="text-muted mb-0">
+          <i class="bi bi-telephone-fill me-2"></i>
+          <a href="tel:+8801794565923" class="text-decoration-none">+88 01794565923</a>
+        </p>
+      </section>
+
+    </div>
   </div>
+
+  <p class="text-center text-muted small mt-4 mb-0">&copy; 2026 Md. Nazim Uddin</p>
 </div>
 
 </body>
